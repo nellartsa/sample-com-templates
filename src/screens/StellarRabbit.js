@@ -40,16 +40,16 @@ const StellarRabbit = () => {
               className={`navi-links-con ${isActive ? 'active' : ''}`}
             >
               <div className='navi-links'>
-                <Link to='/'>
+                <Link to='/sample-com-templates'>
                   <div className='link txt-upper'>projects</div>
                 </Link>
-                <Link to='/'>
+                <Link to='/sample-com-templates'>
                   <div className='link txt-upper'>about</div>
                 </Link>
-                <Link to='/'>
+                <Link to='/sample-com-templates'>
                   <div className='link txt-upper'>testimonials</div>
                 </Link>
-                <Link to='/'>
+                <Link to='/sample-com-templates'>
                   <div className='link bg-greenlime fc-blue txt-upper'>
                     contact
                   </div>
@@ -106,7 +106,10 @@ const StellarRabbit = () => {
                   <p className='fs-16'>Description of the project</p>
                 </div>
                 <div className='interaction-group'>
-                  <Link to='/' className='fc-purple fw-med txt-upper spacing-2'>
+                  <Link
+                    to='/sample-com-templates'
+                    className='fc-purple fw-med txt-upper spacing-2'
+                  >
                     learn more
                     <img src={arrowRight} alt='arrow' />
                   </Link>
@@ -125,7 +128,10 @@ const StellarRabbit = () => {
                   <p className='fs-16'>Description of the project</p>
                 </div>
                 <div className='interaction-group'>
-                  <Link to='/' className='fc-purple fw-med txt-upper spacing-2'>
+                  <Link
+                    to='/sample-com-templates'
+                    className='fc-purple fw-med txt-upper spacing-2'
+                  >
                     learn more
                     <img src={arrowRight} alt='arrow' />
                   </Link>
@@ -148,7 +154,10 @@ const StellarRabbit = () => {
                   <p className='fs-16'>Description of the project</p>
                 </div>
                 <div className='interaction-group'>
-                  <Link to='/' className='fc-purple fw-med txt-upper spacing-2'>
+                  <Link
+                    to='/sample-com-templates'
+                    className='fc-purple fw-med txt-upper spacing-2'
+                  >
                     learn more
                     <img src={arrowRight} alt='arrow' />
                   </Link>
@@ -180,7 +189,7 @@ const StellarRabbit = () => {
               </p>
 
               <button
-                to='/'
+                to='/sample-com-templates'
                 className='bg-greenlime fc-blue fw-med txt-upper spacing-2'
               >
                 i want a free month
@@ -291,17 +300,17 @@ const StellarRabbit = () => {
             </div>
 
             <div className='social-group'>
-              <Link to='/'>www.conejoestelar.com</Link>
+              <Link to='/sample-com-templates'>www.conejoestelar.com</Link>
             </div>
 
             <div className='social-group'>
               <img src={insta} alt='insta' />
-              <Link to='/'>@conejoestelar</Link>
+              <Link to='/sample-com-templates'>@conejoestelar</Link>
             </div>
 
             <div className='social-group'>
               <img src={twitter} alt='twitter' />
-              <Link to='/'>@hector_reyes</Link>
+              <Link to='/sample-com-templates'>@hector_reyes</Link>
             </div>
           </footer>
         </div>

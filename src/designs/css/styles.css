@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@500&family=Halant&display=swap');
+
 * {
   padding: 0;
   margin: 0;
 }
 
 section {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
@@ -11,4 +14,129 @@ section {
 
 .freeze {
   overflow: hidden;
+}
+
+.main-navi {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.main-navi h1 {
+  font-family: 'Alegreya', serif;
+  font-size: 25px;
+}
+
+.main-navi a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.custom-select {
+  position: relative;
+  font-family: 'Halant', serif;
+  text-align: center;
+}
+
+.custom-select label {
+  position: absolute;
+  font-size: 10px;
+  top: -4px;
+  padding: 0 8px;
+  background-color: #f8f9fa;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.custom-select .select {
+  cursor: pointer;
+  width: 120px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #adb5bd;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.custom-select img {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  transition: 0.5s;
+}
+
+.custom-select img.active {
+  top: 50%;
+  transform: translateY(-50%) scaleY(-1);
+}
+
+.custom-select .options {
+  position: absolute;
+  left: 0;
+  height: 0;
+  top: 55px;
+  padding: 0 10px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  z-index: 1000;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: -1px 9px 35px -7px rgba(39, 43, 43, 0.75);
+  -webkit-box-shadow: -1px 9px 35px -7px rgba(39, 43, 43, 0.75);
+  -moz-box-shadow: -1px 9px 35px -7px rgba(39, 43, 43, 0.75);
+}
+
+.custom-select .options.active {
+  height: 121px;
+}
+
+.custom-select .link {
+  width: 100px;
+  padding: 15px 15px;
+  transition: 0.5s;
+}
+
+.custom-select a:first-child .link {
+  margin-top: 5px;
+}
+
+.custom-select a:last-child .link {
+  margin-bottom: 5px;
+}
+
+.custom-select a:not(:last-child) .link {
+  border-bottom: 1px solid #adb5bd;
+}
+
+.custom-select .link:hover {
+  background-color: #e5e5e5;
+  /* color: #ffffff; */
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .main-navi {
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  .main-navi {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .main-navi {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main-navi .custom-select {
+    margin-top: 15px;
+  }
 }

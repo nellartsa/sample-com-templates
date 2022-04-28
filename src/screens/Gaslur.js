@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import '../designs/css/template1.css'
@@ -36,6 +36,9 @@ const Gaslur = () => {
   const menuRef = useRef(null)
   const naviLinkRef = useRef(null)
 
+  useEffect(() => {
+    document.body.classList.toggle('freeze')
+  }, [isActive])
   return (
     <>
       <section id='t1' className='bg-dark'>
@@ -129,10 +132,10 @@ const Gaslur = () => {
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className='ellipse-1'></div>
-            <div className='ellipse-2'></div>
+              <div className='ellipse-1'></div>
+              <div className='ellipse-2'></div>
+            </div>
           </div>
 
           <div className='auction-segment'>

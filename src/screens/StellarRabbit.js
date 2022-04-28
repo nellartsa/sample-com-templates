@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import '../designs/css/template2.css'
@@ -24,6 +24,9 @@ const StellarRabbit = () => {
   const menuRef = useRef(null)
   const naviLinkRef = useRef(null)
 
+  useEffect(() => {
+    document.body.classList.toggle('freeze')
+  }, [isActive])
   return (
     <>
       <section id='t2' className='bg-gradient'>

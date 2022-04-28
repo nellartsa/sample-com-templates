@@ -23,7 +23,11 @@ const StellarRabbit = () => {
   const [isActive, setIsActive] = useState(false)
 
   useEffect(() => {
-    document.body.classList.toggle('freeze')
+    if (isActive) {
+      document.body.classList.add('freeze')
+    } else {
+      document.body.classList.remove('freeze')
+    }
   }, [isActive])
   return (
     <>

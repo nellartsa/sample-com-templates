@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import '../designs/css/template1.css'
@@ -33,8 +33,6 @@ import filter from '../designs/svg/t1-filter.svg'
 
 const Gaslur = () => {
   const [isActive, setIsActive] = useState(false)
-  const menuRef = useRef(null)
-  const naviLinkRef = useRef(null)
 
   useEffect(() => {
     document.body.classList.toggle('freeze')
@@ -46,10 +44,7 @@ const Gaslur = () => {
           <div className='container'>
             <div className='navi-brand'>gaslur</div>
 
-            <div
-              ref={naviLinkRef}
-              className={`navi-links-con ${isActive ? 'active' : ''}`}
-            >
+            <div className={`navi-links-con ${isActive ? 'active' : ''}`}>
               <div className='navi-link-g1'>
                 <Link to='/sample-com-templates/Gaslur'>
                   <div className='link active'>home</div>
@@ -76,7 +71,6 @@ const Gaslur = () => {
             </div>
 
             <div
-              ref={menuRef}
               onClick={() => setIsActive(!isActive)}
               className={`menu-fragments ${isActive ? 'active' : ''}`}
             >

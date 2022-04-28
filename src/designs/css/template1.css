@@ -195,12 +195,9 @@
 }
 
 #t1 .navi .menu-fragments :nth-child(1),
+#t1 .navi .menu-fragments :nth-child(2),
 #t1 .navi .menu-fragments :nth-child(3) {
   width: 100%;
-}
-
-#t1 .navi .menu-fragments :nth-child(2) {
-  width: 60%;
 }
 
 #t1 .navi .menu-fragments.active :nth-child(1) {

@@ -725,6 +725,7 @@
   }
 
   #t2 footer .logo-group {
+    justify-content: center;
     flex-wrap: wrap;
   }
 }

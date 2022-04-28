@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
 import '../designs/css/template2.css'
@@ -21,8 +21,6 @@ import twitter from '../designs/svg/t2-twitter.svg'
 
 const StellarRabbit = () => {
   const [isActive, setIsActive] = useState(false)
-  const menuRef = useRef(null)
-  const naviLinkRef = useRef(null)
 
   useEffect(() => {
     document.body.classList.toggle('freeze')
@@ -38,10 +36,7 @@ const StellarRabbit = () => {
               </b>
             </div>
 
-            <div
-              ref={naviLinkRef}
-              className={`navi-links-con ${isActive ? 'active' : ''}`}
-            >
+            <div className={`navi-links-con ${isActive ? 'active' : ''}`}>
               <div className='navi-links'>
                 <Link to='/sample-com-templates'>
                   <div className='link txt-upper'>projects</div>
@@ -61,7 +56,6 @@ const StellarRabbit = () => {
             </div>
 
             <div
-              ref={menuRef}
               onClick={() => setIsActive(!isActive)}
               className={`menu-fragments ${isActive ? 'active' : ''}`}
             >
